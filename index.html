@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title> A quote a day</title>
+    </head>
+    <body>
+        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+        <div align = "center">
+            <h1 style = "color: #1a1a1a" id = "quote"></h1>
+        </div>
+
+        <script>
+            var quoteArray = [
+                "Sometimes we just forget about giving thanks, and we just take it for granted that we have those good things coming to us.",
+                "Only a mediocre person is always at his best.",
+                "Vince Lombardi understood the correct balance between loving your players and wanting to buddy up to them. He once said that a leader should never try to 'close the gap' between himself and his team. He should love his team, serve his team, and sacrifice for his team - but he should never try to be one of the guys.",
+                "Be thankful for what you have; you'll end up having more. If you concentrate on what you don't have, you will never, ever have enough.", 
+                "There is something incredible about giving when it's our idea. Opening our eyes and ears to the people around us and asking 'How can we give?' is a profoundly life-giving and satisfying way to live.",
+                "Happiness depends on how you balance your life's equations between positive and negative experiences and attitudes.",
+                "If one waits for the spectacular moments, the 'ooh, ahh' moments to spark a little gratitude, there may be a long wait between those thankful moments.", 
+                "When people are determined they can overcome anything.", 
+                "Being thankful should be an unwritten rule of life because there are several things to be thankful for.", 
+                "Controlling your time helps overcome frustration and brings life into balance and order, giving you the feeling of control and poise." 
+            ];
+
+            var randomnumber = Math.floor(Math.random() * 10);
+            console.log(randomnumber);
+            document.getElementById("quote").innerHTML = quoteArray[randomnumber-1];
+
+            </script>
+    </body>
+</html>
